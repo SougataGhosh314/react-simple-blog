@@ -1,0 +1,57 @@
+# dynamic variables in component template:
+
+
+    const title = "Welcome to simple blogging";
+    const likes = 50;
+    // const person = {
+    //   name: "Raja",
+    //   age: 23
+    // };
+    // const flag = true;
+    var address = "http://www.google.com";
+
+    <h2>{ title }</h2>
+    <p>Liked { likes } times.</p>
+    {/* <p>{ person }</p> */}
+    <p>{ 10 }</p>
+    <p>{ Math.floor(Math.random() * 1000) }</p>
+    <p>{ [1, 2, 3, 4, 5] }</p>
+    <p>{ "Hello, World!" }</p>
+    <a href = { address }>Go to google</a>
+
+# using inline styles for components:
+
+    style={{
+            color: "#deae00",
+            backgroundColor: "#000000",
+            borderRadius: "8px"
+        }}
+
+# anonymous function being called at clickEvent:
+
+
+    const handleClickAgain = (name, e) => {
+        console.log("Hello " + name);
+        console.log(e.target);
+    }
+
+    <button onClick={(e) => handleClickAgain("Raja", e)}>Click me again</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
