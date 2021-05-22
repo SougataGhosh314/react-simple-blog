@@ -1,3 +1,12 @@
+# Setting up project, running in development mode, and starting json-server:
+
+to create react project, inside folder you want: 
+run command: npx create-react-app app-name
+
+to run app: npm run start
+
+to start json-server: npx json-server --watch data/db.json --port 8000
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
